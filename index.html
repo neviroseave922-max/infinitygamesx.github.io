@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Games X</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2 class="logo">INFINITY <span>GAMES X</span></h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#categories">Categories</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <p>WELCOME TO INFINITY GAMES X</p>
+        <h1>PLAY WITHOUT <span>LIMITS.</span></h1>
+        <p>Discover games. Explore worlds. Have fun.</p>
+        <a href="#games" class="play-button">EXPLORE GAMES</a>
+    </section>
+
+    <main class="games-section" id="games">
+        <h2>POPULAR GAMES</h2>
+
+        <input
+            type="text"
+            id="gameSearch"
+            placeholder="Search for a game..."
+        >
+
+        <div class="categories" id="categories">
+            <button class="category active" data-category="All">All</button>
+            <button class="category" data-category="Arcade">Arcade</button>
+            <button class="category" data-category="Racing">Racing</button>
+            <button class="category" data-category="Puzzle">Puzzle</button>
+            <button class="category" data-category="Adventure">Adventure</button>
+        </div>
+
+        <div class="game-grid" id="gameGrid">
+
+            <article class="game-card" data-name="Space Shooter" data-category="Arcade">
+                <div class="game-image space">🚀</div>
+                <h3>Space Shooter</h3>
+                <p>Arcade</p>
+                <button onclick="showMessage('Space Shooter')">PLAY NOW</button>
+            </article>
+
+            <article class="game-card" data-name="Speed Racer" data-category="Racing">
+                <div class="game-image racing">🏎️</div>
+                <h3>Speed Racer</h3>
+                <p>Racing</p>
+                <button onclick="showMessage('Speed Racer')">PLAY NOW</button>
+            </article>
+
+            <article class="game-card" data-name="Block World" data-category="Adventure">
+                <div class="game-image blocks">🧱</div>
+                <h3>Block World</h3>
+                <p>Adventure</p>
+                <button onclick="showMessage('Block World')">PLAY NOW</button>
+            </article>
+
+            <article class="game-card" data-name="Brain Puzzles" data-category="Puzzle">
+                <div class="game-image puzzle">🧩</div>
+                <h3>Brain Puzzles</h3>
+                <p>Puzzle</p>
+                <button onclick="showMessage('Brain Puzzles')">PLAY NOW</button>
+            </article>
+
+        </div>
+
+        <p id="noResults" hidden>No games found!</p>
+    </main>
+
+    <footer>
+        © 2026 INFINITY GAMES X
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
